@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+:root{
+    --violet: hsl(257,40%,49%);
+    --soft-magneta: hsl(300,69%,71%);
+    --white: #fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url('../images/bg-desktop.svg'), var(--violet) ;
+    color: var(--white);
+    margin: 12px 50px;
+}
+section{
+    display: flex;
+    gap: 40px;
+}
+.logo{
+    display: flex;
+    gap: 8px;
+}
+.logo h1{
+    font-size: 55px;
+}
+h1{
+    font-size: 35px;
+    font-weight: 800;
+    padding-bottom: 10px;
+}
+.build{
+    padding-top: 60px;
+}
+p{
+    font-size: 20px;
+    padding: 20px 10px 8px 0px;
+    line-height: 28px;
+    font-weight: 500;
+}
+.register{
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    width: 180px;
+    height: 50px;
+    border-radius: 25px;
+    text-align: center;
+    color: var(--violet);
+}
+button span{
+    font-size: 16px;
+    font-weight: 500;
+}
+.icons{
+    display: flex;
+    justify-content: end;
+    text-align: center;
+    gap: 15px;
+}
+.social{
+    border: 0.5px solid var(--white);
+    border-radius: 50%;
+    width: 40px;
+    height: 48px;
+    padding-top: 15px;
+}
+
+@media (max-width: 500px) {
+   body{
+    background: url('../images/bg-mobile.svg'), var(--violet);
+    text-align: center;
+    margin: 30px 50px;
+   }
+   section{
+    flex-direction: column;
+   }
+   .illustration img{
+    max-width: 100%;
+   }
+   .icons{
+    justify-content: center;
+   }
+   .btn{
+    padding: 30px 0px;
+   }
+}
+@media (min-width: 500px) and (max-width: 900px) {
+    body{
+     background: url('../images/bg-mobile.svg'), var(--violet);
+     text-align: center;
+     margin: 30px 50px;
+    }
+    section{
+     flex-direction: column;
+    }
+    .illustration img{
+     max-width: 100%;
+    }
+    .icons{
+     justify-content: center;
+    }
+    .btn{
+     padding: 30px 0px;
+    }
+    .register{
+        width: 100%;
+    }
+ }
+ @media (min-width: 900px) and (max-width: 1024px ){
+.illustration img{
+    width: 500px;
+    height: 500px;
+}
+.build{
+    max-width: 50%;
+}   
+ }
+ @media (min-width: 1024px) and (max-width: 1100px ){
+    .icons{
+        padding-top: 15px;
+    }
+    .build{
+        padding-top: 35px;
+    }
+     }
