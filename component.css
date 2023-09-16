@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 body{
-    background: url('../images/bg-desktop.svg'), var(--violet) ;
+    background: url('bg-desktop.svg'), var(--violet) ;
     color: var(--white);
     margin: 12px 50px;
 }
@@ -68,7 +68,7 @@ button span{
 
 @media (max-width: 500px) {
    body{
-    background: url('../images/bg-mobile.svg'), var(--violet);
+    background: url('bg-mobile.svg'), var(--violet);
     text-align: center;
     margin: 30px 50px;
    }
@@ -87,7 +87,7 @@ button span{
 }
 @media (min-width: 500px) and (max-width: 900px) {
     body{
-     background: url('../images/bg-mobile.svg'), var(--violet);
+     background: url('bg-mobile.svg'), var(--violet);
      text-align: center;
      margin: 30px 50px;
     }
